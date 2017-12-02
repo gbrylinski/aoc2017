@@ -18,10 +18,14 @@ class BaseDay
   end
 
   def show_part_1_solution
-    show_solution(@day, 1, part_1_solution)
+    show_solution(day, 1, part_1_solution)
   end
 
   def show_part_2_solution
-    show_solution(@day, 2, part_2_solution)
+    show_solution(day, 2, part_2_solution)
+  end
+
+  def day
+    @day ||= self.class.name.scan(/\d*$/).first.to_i
   end
 end
