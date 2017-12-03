@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require_relative './lib/base_day'
-require 'pry'
 
 class Day2 < BaseDay
   def initialize
